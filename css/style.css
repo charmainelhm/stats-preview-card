@@ -1,0 +1,55 @@
+:root {
+  --color-primary: #fff;
+  --color-secondary: #ffffff75;
+  --color-tertiary: #ffffff60;
+  --color-accent: #aa5cdb;
+  --color-bg-primary: #090b1a;
+  --color-bg-card: #1b1938;
+
+  --fs-xl: 4rem;
+  --fs-600: 3rem;
+  --fs-500: 2.8rem;
+  --fs-400: 1.5rem;
+  --fs-300: 1.3rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--color-secondary);
+  background-color: var(--color-bg-primary);
+}
+
+h1 {
+  font-size: var(--fs-600);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* Attribution*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--color-primary);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.1s ease-out;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+  color: var(--color-accent);
+}
