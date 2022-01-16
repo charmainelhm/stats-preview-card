@@ -1,14 +1,14 @@
 :root {
   --color-primary: #fff;
-  --color-secondary: #ffffff75;
-  --color-tertiary: #ffffff60;
+  --color-secondary: #ffffff90;
+  --color-tertiary: #ffffff70;
   --color-accent: #aa5cdb;
   --color-bg-primary: #090b1a;
   --color-bg-card: #1b1938;
 
   --fs-xl: 4rem;
-  --fs-600: 3rem;
-  --fs-500: 2.8rem;
+  --fs-600: 2.8rem;
+  --fs-500: 2.2rem;
   --fs-400: 1.5rem;
   --fs-300: 1.3rem;
 }
@@ -27,6 +27,7 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
+  font-size: var(--fs-400);
   color: var(--color-secondary);
   background-color: var(--color-bg-primary);
 }
@@ -37,10 +38,75 @@ h1 {
   color: var(--color-primary);
 }
 
+p {
+  line-height: 1.8;
+}
+
+.card {
+  background-color: var(--color-bg-card);
+  width: 88%;
+  margin: 10rem auto;
+  border-radius: 10px;
+}
+
+.card__img {
+  width: 100%;
+  min-height: 240px;
+  background-image: url(../images/image-header-mobile.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  display: flex;
+  filter: contrast(150%) brightness(80%);
+}
+
+.card__img::before {
+  content: "";
+  background-color: var(--color-accent);
+  width: 100%;
+  opacity: 0.6;
+  overflow: hidden;
+}
+
+.card__content {
+  text-align: center;
+  padding: 3rem;
+}
+
+.accent-text {
+  color: var(--color-accent);
+}
+
+.stats-group {
+  margin-top: 3.5rem;
+}
+
+.stats__title {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: var(--fs-300);
+  font-weight: 400;
+  color: var(--color-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stats {
+  font-size: var(--fs-500);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.stats__title + .stats {
+  margin-top: 2rem;
+}
+
 /* Attribution*/
 .attribution {
   font-size: 11px;
   text-align: center;
+  width: 100%;
+  position: absolute;
 }
 .attribution a {
   color: var(--color-primary);
