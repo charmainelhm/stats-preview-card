@@ -51,22 +51,25 @@ p {
 
 .card__img {
   width: 100%;
-  min-height: 240px;
+  padding-top: 73.4%;
   background-image: url(../images/image-header-mobile.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   border-radius: 10px 10px 0 0;
-  overflow: hidden;
-  display: flex;
-  filter: contrast(150%) brightness(80%);
+  filter: contrast(170%) brightness(70%) sepia(10%);
+  position: relative;
 }
 
 .card__img::before {
   content: "";
   background-color: var(--color-accent);
-  width: 100%;
   opacity: 0.6;
-  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .card__content {
